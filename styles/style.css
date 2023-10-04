@@ -1,6 +1,6 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 92px 50px;
 }
@@ -37,6 +37,8 @@
 .header__logo {
     width: 148px;
     height: 105px;
+    align-self: center;
+    justify-self: center;
 }
 
 .header__logo-image {
@@ -45,6 +47,7 @@
 
 .address {
     max-width: 240px;
+    justify-self: end;
 }
 
 .header__address {
@@ -57,4 +60,87 @@
 .header__address a {
     text-decoration: none;
     border-bottom: 1px solid #000;
+}
+
+.cover {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 757px;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay {
+    padding: 165px 50px 50px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.cover__title {
+    margin-bottom: 143px;
+    margin-bottom: 135px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    display: block;
+    text-align: center;
+}
+
+.aligned-text_right {
+    display: block;
+    text-align: right;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 96px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.cover__description-text {
+    word-spacing: 26px;
+}
+
+.bet-button {
+    width: 257px;
+    height: 52px;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
