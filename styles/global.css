@@ -27,6 +27,11 @@ blockquote {
 
 a {
   color: inherit;
+  transition: opacity .4s;
+}
+
+a:hover {
+  opacity: .6;
 }
 
 img {
