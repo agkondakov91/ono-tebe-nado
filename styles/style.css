@@ -46,7 +46,7 @@
 }
 
 .address {
-  max-width: 240px;
+  width: 240px;
   justify-self: end;
 }
 
@@ -284,4 +284,46 @@
 
 .about__text:last-of-type {
   margin-bottom: 0;
+}
+
+.footer {
+  padding: 0 50px 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-list-item {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.footer__menu-link_active {
+  border-bottom: 0px;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  max-width: 240px;
+}
+
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
 }
